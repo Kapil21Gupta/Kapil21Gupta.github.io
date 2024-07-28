@@ -1,23 +1,45 @@
 <div class="pub-year">
     <h3 class="mt-3">Overview</h3>
     
-   My primary focus revolves around the analysis of spatial and spatio-temporal data, with a special emphasis on their practical applications in analyzing the house price dynamics.
-    Following are broadly the topics I have been working on.
-    <br>
-    <br>
-    1) Spatio-temporal modeling
-    <br>
-    2) Bayesian implementation of statistical methods
-    <br>
-    3) Clustering and classification methods
-    <br>
-    4) Divide and Conquer approach
-    <br>
-    5) Variable Selection Methods
-    <br>
-    6) Application of statistics in sports, especially Cricket and Tennis
-
+    <p>My primary focus revolves around the analysis of spatial and spatio-temporal data, with a special emphasis on their practical applications in analyzing house price dynamics. The following are the broad topics I have been working on:</p>
     
+    <ul>
+        <li>Spatio-temporal modeling</li>
+        <li>Bayesian implementation of statistical methods</li>
+        <li>Clustering and classification methods</li>
+        <li>Divide and Conquer approach</li>
+        <li>Variable Selection Methods</li>
+        <li>Application of statistics in sports, especially Cricket and Tennis</li>
+    </ul>
 </div>
 
-    
+<div class="research-tabs">
+    <ul class="nav nav-tabs" id="researchTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="consulting-tab" data-toggle="tab" href="#consulting" role="tab" aria-controls="consulting" aria-selected="true">Consulting</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="grants-tab" data-toggle="tab" href="#grants" role="tab" aria-controls="grants" aria-selected="false">Grants</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="researchTabContent">
+        <div class="tab-pane fade show active" id="consulting" role="tabpanel" aria-labelledby="consulting-tab">
+            <!-- Content for Consulting -->
+            <p>Details about your consulting work go here.</p>
+        </div>
+        <div class="tab-pane fade" id="grants" role="tabpanel" aria-labelledby="grants-tab">
+            <!-- Content for Grants -->
+            <p>Details about your grants go here.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Add this script at the bottom of your HTML, just before the closing </body> tag -->
+<script>
+    $(document).ready(function(){
+        $('#researchTab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            e.target // newly activated tab
+            e.relatedTarget // previous active tab
+        })
+    });
+</script>
